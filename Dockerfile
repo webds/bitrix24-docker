@@ -75,10 +75,7 @@ ENV PHP_ENABLE_XDEBUG=0 \
     COMPOSER_ALLOW_SUPERUSER=1
 
 # Настройки
-RUN sed -i 's/;date.timezone =/date.timezone = Europe\/Kiev/g' /etc/php.ini && \
-    sed -i 's/memory_limit = 128M/memory_limit = 512M/g' /etc/php.ini && \
-    sed -i 's/mbstring.func_overload = 2/mbstring.func_overload = 0/g' /etc/php.ini && \
-    sed -i 's/;mbstring.func_overload = 2/mbstring.func_overload = 0/g' /etc/php.ini
+RUN sed -i 's/;mbstring.func_overload = 2/mbstring.func_overload = 0/g' /etc/php.ini
 
 # Install composer
 RUN curl -sS https://getcomposer.org/installer | php && mv composer.phar /usr/local/bin/composer && \
