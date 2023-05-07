@@ -87,8 +87,8 @@ Bitrix24 Docker включает в себя первичные файлы ус�
 http://localhost/bitrixsetup.php?action=UNPACK&lang=ru&filename=xxxxxxxxx.tar.gz
 - xxxxxxxxx.tar.gz  - это название нашего архива
 - скачавание архивов: 
-1С-Битрикс24 (Демо версия)         - корпоративный портал:  [http://www.1c-bitrix.ru/download/portal/bitrix24_encode_php5.tar.gz](http://www.1c-bitrix.ru/download/portal/bitrix24_encode_php5.tar.gz)
-1С-Битрикс24 (Коммерческая версия) - корпоративный портал: [http://www.1c-bitrix.ru/private/download/bitrix24_source.tar.gz](http://www.1c-bitrix.ru/private/download/bitrix24_source.tar.gz)
-1С-Битрикс24 (Демо версия)         - энтерпрайз [http://www.1c-bitrix.ru/download/portal/bitrix24_enterprise_encode_php5.tar.gz](http://www.1c-bitrix.ru/download/portal/bitrix24_enterprise_encode_php5.tar.gz)
-1С-Битрикс24 (Коммерческая версия) - энтерпрайз [http://www.1c-bitrix.ru/download/portal/bitrix24_enterprise_encode_php5.tar.gz](http://www.1c-bitrix.ru/private/download/bitrix24_enterprise_source.tar.gz)
+- 1С-Битрикс24 (Демо версия)         - корпоративный портал:  [http://www.1c-bitrix.ru/download/portal/bitrix24_encode_php5.tar.gz](http://www.1c-bitrix.ru/download/portal/bitrix24_encode_php5.tar.gz)
+- 1С-Битрикс24 (Коммерческая версия) - корпоративный портал: [http://www.1c-bitrix.ru/private/download/bitrix24_source.tar.gz](http://www.1c-bitrix.ru/private/download/bitrix24_source.tar.gz)
+- 1С-Битрикс24 (Демо версия)         - энтерпрайз [http://www.1c-bitrix.ru/download/portal/bitrix24_enterprise_encode_php5.tar.gz](http://www.1c-bitrix.ru/download/portal/bitrix24_enterprise_encode_php5.tar.gz)
+- 1С-Битрикс24 (Коммерческая версия) - энтерпрайз [http://www.1c-bitrix.ru/download/portal/bitrix24_enterprise_encode_php5.tar.gz](http://www.1c-bitrix.ru/private/download/bitrix24_enterprise_source.tar.gz)
 
