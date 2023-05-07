@@ -1,12 +1,17 @@
 FROM centos:7
 
 # Add basics first
-RUN yum -y install epel-release \
-    http://rpms.remirepo.net/enterprise/remi-release-7.rpm \
-    yum-utils && \
-    yum-config-manager --enable remi-php72
+RUN yum -y update && \
+    yum -y install epel-release && \
+    yum -y install wget curl git unzip && \
+    yum -y install https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm && \
+    yum -y install http://rpms.remirepo.net/enterprise/remi-release-7.rpm && \
+    yum -y install yum-utils && \
+    yum-config-manager --enable remi-php80
 
 RUN yum update -y && yum upgrade -y && yum install -y initscripts \
+    php-mysqlnd \
+    php-xml \
     wget \
     httpd \
     curl \
@@ -69,6 +74,11 @@ ENV PHP_ENABLE_XDEBUG=0 \
     VERSION_PRESTISSIMO_PLUGIN=^0.3.7 \
     COMPOSER_ALLOW_SUPERUSER=1
 
+# Настройки
+RUN sed -i 's/;date.timezone =/date.timezone = Europe\/Kiev/g' /etc/php.ini && \
+    sed -i 's/memory_limit = 128M/memory_limit = 512M/g' /etc/php.ini && \
+    sed -i 's/mbstring.func_overload = 2/mbstring.func_overload = 0/g' /etc/php.ini && \
+    sed -i 's/;mbstring.func_overload = 2/mbstring.func_overload = 0/g' /etc/php.ini
 
 # Install composer
 RUN curl -sS https://getcomposer.org/installer | php && mv composer.phar /usr/local/bin/composer && \
