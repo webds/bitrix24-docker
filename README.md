@@ -76,9 +76,6 @@ Bitrix24 Docker включает в себя первичные файлы ус�
 - [Как подключить phpMyAdmin](/docs/02-phpmyadmin-setup.md)
 - Запуск Codeception тестов
 
-## Примечание
-
-Это неофициальная сборка и предназначена исключительно для локальной разработки. Не используйте данный образ в production среде.
 
 ## Внимание
 
@@ -91,4 +88,14 @@ http://localhost/bitrixsetup.php?action=UNPACK&lang=ru&filename=xxxxxxxxx.tar.gz
 - 1С-Битрикс24 (Коммерческая версия) - корпоративный портал: [http://www.1c-bitrix.ru/private/download/bitrix24_source.tar.gz](http://www.1c-bitrix.ru/private/download/bitrix24_source.tar.gz)
 - 1С-Битрикс24 (Демо версия)         - энтерпрайз [http://www.1c-bitrix.ru/download/portal/bitrix24_enterprise_encode_php5.tar.gz](http://www.1c-bitrix.ru/download/portal/bitrix24_enterprise_encode_php5.tar.gz)
 - 1С-Битрикс24 (Коммерческая версия) - энтерпрайз [http://www.1c-bitrix.ru/download/portal/bitrix24_enterprise_encode_php5.tar.gz](http://www.1c-bitrix.ru/private/download/bitrix24_enterprise_source.tar.gz)
+
+
+## Примечание
+
+Это неофициальная сборка и предназначена исключительно для локальной разработки. Не используйте данный образ в production среде.
+
+http://localhost/bitrixsetup.php?action=UNPACK&lang=ru&filename=bitrix24_encode_php5.tar.gz
+
+
+Также необходимо отключить вывод ошибок  bitrixsetup.php  , строка error_reporting(E_ALL &~ E_NOTICE);  заменить на error_reporting(E_ALL &~ E_NOTICE &~ E_WARNING);
 
